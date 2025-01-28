@@ -1,13 +1,10 @@
-import './App.css'
+import './App.css';
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>Commune de Corlay</h1>
-      </div>
-    </>
-  )
+    <div className="App">
+    </div>
+  );
 }
 
-export default App
+export default App;
