@@ -1,0 +1,148 @@
+.one-service {
+    width: 42%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    background: #1e5a6e;
+    transform: scale(0.1); /* État initial avant l'animation */
+    opacity: 1; /* Rendre invisible avant l'animation */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Appliquer l'animation au scroll */
+.one-service.expand {
+    animation: expandBox 1s ease-out forwards;
+}
+
+/* Keyframes pour l'animation */
+@keyframes expandBox {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Titres */
+.one-service .title2 {
+    font-family: 'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.box-text-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+/* Adresse */
+.box-text-services .address,
+.box-text-services .phone,
+.box-text-services .email,
+.box-text-services .website,
+.box-text-services .additional-info {
+    font-family: 'Futura LT', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 5px 0;
+    display: flex;
+    text-align: left;
+}
+
+.one-service .address i,
+.one-service .phone i,
+.one-service .email i,
+.one-service .website i {
+    font-size: 16px;
+    line-height: 18px;
+    color:black;
+    padding-right: 10px;
+}
+
+/* Liens */
+.a-service {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    background-color: #464646;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.one-service .email i,
+.one-service .website i {
+    color:white;
+}
+
+.a-service:hover {
+    background: black;
+}
+
+.a-service:hover i {
+    color:white;
+}
+
+.service-image {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: white;
+}         
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .one-service {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .box-text-services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top:20px;
+    }
+
+    .box-text-services .address,
+    .box-text-services .phone,
+    .box-text-services .email,
+    .box-text-services .website,
+    .box-text-services .additional-info {
+    text-align: center;
+}
+
+    .one-service .title2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}

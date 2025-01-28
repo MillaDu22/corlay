@@ -1,0 +1,138 @@
+
+.container-portail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.container-portail .title23 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight:400;
+    color:#1e5a6e;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.box-link-portail {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap:20px;
+    overflow: hidden;
+}
+
+.box-link-portail .link-portail {
+    background: white;
+    height:100px;
+    width:20%;
+    padding:30px;
+    border:1px solid lightgray;
+    overflow: hidden; /* Cache tout ce qui dépasse l'élément parent */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.box-link-portail .link-portail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%; /* Commence en dehors à gauche */
+    width: 100%;
+    height: 100%;
+    background: rgba(159, 159, 159, 0.3); /* Couleur de la surbrillance */
+    transform: translateY(0); /* Pas besoin de centrer verticalement */
+    transition: left 0.4s ease-in-out; /* Rend le déplacement fluide */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.box-link-portail .link-portail:hover::before {
+    left: 0%; /* Fait glisser la surbrillance pour couvrir l’élément */
+    overflow: hidden;
+}
+
+.box-link-portail .link-portail:hover {
+    transform: scale(1.05); 
+    overflow: hidden;
+}
+
+
+.logo-portail {
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+    .container-portail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 30px;
+    }
+
+    .container-portail .box-link-portail {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        gap:10px;
+    }
+
+    .container-portail .box-link-portail .link-portail {
+        height:100px;
+        width:15%;
+        padding:20px;
+        border:1px solid lightgray;
+        overflow: hidden; /* Cache tout ce qui dépasse l'élément parent */
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-portail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 30px;
+    }
+
+    .container-portail .box-link-portail {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        gap:20px;
+    }
+
+    .container-portail .box-link-portail .link-portail {
+        height:100px;
+        width:70%;
+        padding:30px;
+        border:1px solid lightgray;
+        overflow: hidden; /* Cache tout ce qui dépasse l'élément parent */
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+}

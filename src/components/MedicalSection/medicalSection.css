@@ -1,0 +1,184 @@
+/* Global styles for MedicalSection */
+.medi-section {
+    width:42%;
+    min-width:280px;
+    background-color: #1e5a6e;
+    border-radius: 0px;
+    padding: 20px;
+    margin: 0px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease both;
+}
+
+@keyframes zoomRotateIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.medi-section {
+    animation: zoomRotateIn 0.8s ease both;
+    font-family: 'Futura LT', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.urgences {
+    width:45%;
+    min-width:280px;
+    border-radius: 0px;
+    padding: 20px;
+    margin: 0px 0 0;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease both;
+    background:#aa371e;
+
+}
+
+
+.medi-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.medi-section:hover {
+    background: #1e5a6e;
+    border:1px solid white;
+    transition: background 0.5s ease;
+}
+
+
+/* Title styling */
+.medi-section .title2 {
+    font-family: 'Futura LT', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icon inside the title */
+.medi-section .title2 i {
+    color: white;
+    font-size: 16px;
+}
+
+/* Address and phone number */
+.medi-section .adress {
+    font-family: 'Futura LT', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Address icon */
+.medi-section .adress i {
+    color: white;
+    margin-right: 5px;
+}
+
+/* List of items */
+.medi-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medi-section ul li {
+    list-style: none;
+    font-family: 'Futura LT', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+    border-bottom: 1px solid white;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.medi-section ul li {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0; /* Initial opacity */
+}
+
+.medi-section ul li:nth-child(1) { animation-delay: 0.2s; }
+.medi-section ul li:nth-child(2) { animation-delay: 0.4s; }
+.medi-section ul li:nth-child(3) { animation-delay: 0.6s; }
+.medi-section ul li:nth-child(4) { animation-delay: 0.8s; }
+.medi-section ul li:nth-child(5) { animation-delay: 1s; }
+.medi-section ul li:nth-child(6) { animation-delay: 1.2s; }
+.medi-section ul li:nth-child(7) { animation-delay: 1.4s; }
+.medi-section ul li:nth-child(8) { animation-delay: 1.6s; }
+
+
+.medi-section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect on list items */
+.medi-section ul li:hover {
+    background-color: #464646;
+    color: white;
+    border-radius: 0px;
+}
+
+/* Animation for the component */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .medi-section {
+        width:90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .medi-section {
+        min-width: 100px;
+        width:90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
