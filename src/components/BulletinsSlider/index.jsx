@@ -9,19 +9,19 @@ import "swiper/css/autoplay";
 import "./bulletinsSlider.css";
 
 import Cr100 from '../../assets/images/bulletins/bulletin-un.webp';
-import Cr101 from '../../assets/images/Bulletins/bulletin-deux.webp';
-import Cr102 from '../../assets/images/Bulletins/bulletin-trois.webp';
-import Cr103 from '../../assets/images/Bulletins/bulletin-quatre.webp';
-import Cr104 from '../../assets/images/Bulletins/bulletin-cinq.webp';
-import Cr105 from '../../assets/images/Bulletins/bulletin-six.webp';
-import Cr106 from '../../assets/images/Bulletins/bulletin-sept.webp';
-import Cr107 from '../../assets/images/Bulletins/bulletin-huit.webp';
-import Cr108 from '../../assets/images/Bulletins/bulletin-neuf.webp';
-import Cr109 from '../../assets/images/Bulletins/bulletin-dix.webp';
-import Cr110 from '../../assets/images/Bulletins/bulletin-onze.webp';
-import Cr111 from '../../assets/images/Bulletins/bulletin-douze.webp';
-import Cr112 from '../../assets/images/Bulletins/bulletin-treize.webp';
-import Cr113 from '../../assets/images/Bulletins/bulletin-quatorze.webp';
+import Cr101 from '../../assets/images/bulletins/bulletin-deux.webp';
+import Cr102 from '../../assets/images/bulletins/bulletin-trois.webp';
+import Cr103 from '../../assets/images/bulletins/bulletin-quatre.webp';
+import Cr104 from '../../assets/images/bulletins/bulletin-cinq.webp';
+import Cr105 from '../../assets/images/bulletins/bulletin-six.webp';
+import Cr106 from '../../assets/images/bulletins/bulletin-sept.webp';
+import Cr107 from '../../assets/images/bulletins/bulletin-huit.webp';
+import Cr108 from '../../assets/images/bulletins/bulletin-neuf.webp';
+import Cr109 from '../../assets/images/bulletins/bulletin-dix.webp';
+import Cr110 from '../../assets/images/bulletins/bulletin-onze.webp';
+import Cr111 from '../../assets/images/bulletins/bulletin-douze.webp';
+import Cr112 from '../../assets/images/bulletins/bulletin-treize.webp';
+import Cr113 from '../../assets/images/bulletins/bulletin-quatorze.webp';
 
 const BulletinsSlider = () => {
 
