@@ -1,0 +1,100 @@
+
+.body-shop {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding:180px 0% 0px;
+    background:white;
+
+}
+
+.body-shop .typewriter {
+    margin-top:30px;
+}
+
+.body-shop .typewriter .title1 {
+    font-family: 'Marianne';
+    font-size:38px;
+    line-height:48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.body-shop .typewriter .title1 {
+    font-family:'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    background:#464646;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animate 3s infinite alternate;
+}
+
+.body-shop .typewriter .title1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(30, end) forwards;
+}
+
+.intro-shop {
+    padding: 50px 5% 20px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+    @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.p-intro-shop {
+    color:rgb(108, 108, 108);
+    font-family: "Futura LT", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.shop {
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1.2s ease-out;
+    padding:20px 5% 30px;
+    margin: 0 auto;
+    background: black;
+}
+
+@media (max-width: 768px) {
+    .body-shop .intro-shop {
+        padding-top:20px;
+    }
+    .body-shop {
+        padding-bottom: 0px;
+    }
+}
+
+
+

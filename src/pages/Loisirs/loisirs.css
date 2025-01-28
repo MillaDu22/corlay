@@ -1,0 +1,125 @@
+
+.body-loisirs {
+    width:100%;
+    padding:180px 0% 0px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.body-loisirs .typewriter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.body-loisirs .typewriter .title1 {
+    font-family: 'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    line-height:22px;
+    font-weight: 700;
+    text-align: center;
+    color:#464646;
+}
+
+.body-loisirs .typewriter .title1 {
+    font-family: 'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    line-height:22px;
+    font-weight: 700;
+    text-align: center;
+    background:#464646;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animate 3s infinite alternate;
+}
+
+.body-loisirs .typewriter .title1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(30, end) forwards;
+}
+
+.intro-loisirs {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+    @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.p-intro-loisirs {
+    color:rgb(108, 108, 108);
+    font-family: "Futura LT", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.loisir-section {
+    background:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width:90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    animation: fadeIn 1.2s ease-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .body-loisirs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .loisir-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .loisir-card {
+        margin-left: auto;
+        margin-right: auto;
+        width:90%;
+        text-align: center;
+    }
+    .intro-loisirs {
+        padding-top: 0;
+    }
+}

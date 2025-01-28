@@ -1,0 +1,135 @@
+.history-section {
+    margin: 0 auto;
+    width:90%;
+    padding: 200px 5% 20px;
+    background: white;
+}
+
+.monuments h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
+    color: black;
+    font-family:'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight:400;
+}
+
+.history-section .history-intro {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.history-content .typewriter h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color:black;
+    font-size:20px;
+    line-height:20px;
+    font-weight: 700;
+    text-align: center;
+    background:black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animate 3s infinite alternate;
+}
+
+.history-content .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(30, end) forwards;
+}
+
+.history-intro {
+    text-align: justify;
+    color: black;
+    font-family:'Futura LT', sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight:400;
+}
+
+.monuments-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.monuments-content p {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: justify;
+    color: black;
+    font-family:'Futura LT', sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight:400;
+}
+
+.float-image {
+    flex-shrink: 0;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.left-image {
+    margin-right: 1.5rem;
+}
+
+.right-image {
+    margin-left: 1.5rem;
+}
+
+.float-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .history-section {
+        padding-top:180px;
+    }
+    .monuments-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .monuments-content p {
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    .float-image {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+
+    .photos-anciennes .gallery {
+        grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .history-section {
+        width:90%;
+        padding: 180px 5% 30px;
+    }
+    .gallery figure {
+        width:100%;
+        margin: 0 auto;
+    }
+
+    .photos-anciennes img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

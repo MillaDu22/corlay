@@ -1,0 +1,175 @@
+
+.body-services {
+    width:100%;
+    min-width: 320px;
+    padding: 180px 0% 0px;
+    margin: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.body-services .typewriter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.body-services .typewriter .title1 {
+    font-family: 'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    line-height:22px;
+    font-weight: 700;
+    text-align: center;
+    color:#464646;
+}
+
+.body-services .typewriter .title1 {
+    font-family: 'Josefin', sans-serif;
+    font-size:20px;
+    line-height:22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background: #464646;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animate 3s infinite alternate;
+}
+
+.body-services .typewriter .title1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(30, end) forwards;
+}
+
+.intro-services {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+    @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.p-intro-services {
+    color:rgb(108, 108, 108);
+    font-family: "Futura LT", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.services {
+    background-color: black;
+    margin: 0 auto;
+    width:90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.2s ease-out;
+    
+}
+
+.container-local-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.title2-local-services {
+    font-family: "Josefin", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .body-services {
+        width:100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .body-services .typewriter .title1 {
+        font-size:24px;
+    }
+
+    .body-services {
+        padding: 180px 0% 0px 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-services .typewriter {
+        margin-bottom: 0;
+    }
+    
+    .body-services .services {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .title2 {
+        margin: 0 auto;
+        width:100%;
+        text-align: center;
+        font-size:20px;
+    }
+
+    .services {
+        width:100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-bottom: 0;
+    }
+
+    .container-local-services {
+        width:90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

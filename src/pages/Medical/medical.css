@@ -1,0 +1,84 @@
+.body-medical {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 180px 0% 20px;
+    background: black;
+    width:100%;
+}
+
+.body-medical .typewriter {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.body-medical .typewriter .title1 {
+    font-family:'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    line-height:22px;
+    font-weight: 700;
+    text-align: center;
+    background:white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animate 3s infinite alternate;
+}
+
+.body-medical .typewriter .title1 {
+overflow: hidden;
+white-space: nowrap;
+margin: 0 auto;
+animation: typing 1.5s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Section styling */
+.pro-medicaux {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top: 40px;
+    padding: 20px 0;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.left-right {
+    width:90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .pro-medicaux {
+        padding: 0px 0;
+    }
+    .left-right {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
