@@ -8,20 +8,20 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "./bulletinsSlider.css";
 
-import Cr100 from '../../assets/images/Bulletins/bulletin1.webp';
-import Cr101 from '../../assets/images/Bulletins/bulletin2.webp';
-import Cr102 from '../../assets/images/Bulletins/bulletin3.webp';
-import Cr103 from '../../assets/images/Bulletins/bulletin4.webp';
-import Cr104 from '../../assets/images/Bulletins/bulletin5.webp';
-import Cr105 from '../../assets/images/Bulletins/bulletin6.webp';
-import Cr106 from '../../assets/images/Bulletins/bulletin7.webp';
-import Cr107 from '../../assets/images/Bulletins/bulletin8.webp';
-import Cr108 from '../../assets/images/Bulletins/bulletin9.webp';
-import Cr109 from '../../assets/images/Bulletins/bulletin10.webp';
-import Cr110 from '../../assets/images/Bulletins/bulletin11.webp';
-import Cr111 from '../../assets/images/Bulletins/bulletin12.webp';
-import Cr112 from '../../assets/images/Bulletins/bulletin13.webp';
-import Cr113 from '../../assets/images/Bulletins/bulletin14.webp';
+import Cr100 from '../../assets/images/bulletins/bulletin-un.webp';
+import Cr101 from '../../assets/images/Bulletins/bulletin-deux.webp';
+import Cr102 from '../../assets/images/Bulletins/bulletin-trois.webp';
+import Cr103 from '../../assets/images/Bulletins/bulletin-quatre.webp';
+import Cr104 from '../../assets/images/Bulletins/bulletin-cinq.webp';
+import Cr105 from '../../assets/images/Bulletins/bulletin-six.webp';
+import Cr106 from '../../assets/images/Bulletins/bulletin-sept.webp';
+import Cr107 from '../../assets/images/Bulletins/bulletin-huit.webp';
+import Cr108 from '../../assets/images/Bulletins/bulletin-neuf.webp';
+import Cr109 from '../../assets/images/Bulletins/bulletin-dix.webp';
+import Cr110 from '../../assets/images/Bulletins/bulletin-onze.webp';
+import Cr111 from '../../assets/images/Bulletins/bulletin-douze.webp';
+import Cr112 from '../../assets/images/Bulletins/bulletin-treize.webp';
+import Cr113 from '../../assets/images/Bulletins/bulletin-quatorze.webp';
 
 const BulletinsSlider = () => {
 
