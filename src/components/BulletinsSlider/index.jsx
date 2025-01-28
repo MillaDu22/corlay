@@ -8,20 +8,20 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "./bulletinsSlider.css";
 
-import Cr100 from '../../assets/images/Bulletins/100.webp';
-import Cr101 from '../../assets/images/Bulletins/101.webp';
-import Cr102 from '../../assets/images/Bulletins/102.webp';
-import Cr103 from '../../assets/images/Bulletins/103.webp';
-import Cr104 from '../../assets/images/Bulletins/104.webp';
-import Cr105 from '../../assets/images/Bulletins/105.webp';
-import Cr106 from '../../assets/images/Bulletins/106.webp';
-import Cr107 from '../../assets/images/Bulletins/107.webp';
-import Cr108 from '../../assets/images/Bulletins/108.webp';
-import Cr109 from '../../assets/images/Bulletins/109.webp';
-import Cr110 from '../../assets/images/Bulletins/110.webp';
-import Cr111 from '../../assets/images/Bulletins/111.webp';
-import Cr112 from '../../assets/images/Bulletins/112.webp';
-import Cr113 from '../../assets/images/Bulletins/113.webp';
+import Cr100 from '../../assets/images/Bulletins/bulletin1.webp';
+import Cr101 from '../../assets/images/Bulletins/bulletin2.webp';
+import Cr102 from '../../assets/images/Bulletins/bulletin3.webp';
+import Cr103 from '../../assets/images/Bulletins/bulletin4.webp';
+import Cr104 from '../../assets/images/Bulletins/bulletin5.webp';
+import Cr105 from '../../assets/images/Bulletins/bulletin6.webp';
+import Cr106 from '../../assets/images/Bulletins/bulletin7.webp';
+import Cr107 from '../../assets/images/Bulletins/bulletin8.webp';
+import Cr108 from '../../assets/images/Bulletins/bulletin9.webp';
+import Cr109 from '../../assets/images/Bulletins/bulletin10.webp';
+import Cr110 from '../../assets/images/Bulletins/bulletin11.webp';
+import Cr111 from '../../assets/images/Bulletins/bulletin12.webp';
+import Cr112 from '../../assets/images/Bulletins/bulletin13.webp';
+import Cr113 from '../../assets/images/Bulletins/bulletin14.webp';
 
 const BulletinsSlider = () => {
 
