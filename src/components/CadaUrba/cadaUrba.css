@@ -1,0 +1,95 @@
+.container-cadaurba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 76%;
+    padding: 30px 12% 40px;
+    background: white;
+}
+
+.container-cadaurba .title2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #1e5a6e;
+    text-align: center;
+    margin: 0px 0 30px;
+}
+
+.container-cadaurba .title2 i {
+    margin-right: 5px;
+}
+
+.container-cadaurba-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Ajoute un écart entre les éléments */
+}
+
+.link-cadaurba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Nécessaire pour le positionnement de ::before */
+    width: 20%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 0px; /* Coins carrés */
+    overflow: hidden; /* Cache tout ce qui dépasse */
+    background: #1e5a6e;
+    border:1px solid black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Futura LT', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    animation: expandBox 1s ease-out forwards;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link-cadaurba i {
+    margin-bottom: 10px;
+    color:white;
+}
+
+.link-cadaurba::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Commence en dehors à gauche */
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 246, 246, 0.3); /* Couleur de la surbrillance */
+    transition: left 0.3s ease-in-out; /* Animation fluide */
+    z-index: 1; /* Sous le texte et les icônes */
+}
+
+.link-cadaurba:hover::before {
+    left: 0; /* Glisse sur l'élément */
+}
+
+.link-cadaurba:hover {
+    transform: scale(1.05); /* Grossissement léger */
+}
+
+@media (max-width: 768px) {
+    .container-cadaurba-link {
+        flex-direction: column;
+    }
+
+    .link-cadaurba {
+        width:60%;
+    }
+}

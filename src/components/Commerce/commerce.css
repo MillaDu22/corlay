@@ -1,0 +1,181 @@
+.one-shop {
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e5a6e;
+    margin: 20px 0;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.one-shop.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box-info-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box-info-shop .title2 {
+    font-family: 'Josefin', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    background: #464646;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:1px solid black;
+}
+
+.name {
+    font-family: 'Futura LT', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.adress {
+    font-family: 'Futura LT', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #cecece;
+    margin: 0 0 5px;
+    text-align: left;
+}
+
+.shop-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+    background: white;
+}
+
+/* Animation au scroll */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .one-shop {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding: 30px;
+    }
+    .box-info-shop{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .box-info-shop .title2 {
+        text-align: center;
+    }
+
+    .box-info-shop .name {
+        text-align: center;
+    }
+
+    .box-info-shop .adress {
+        text-align: center;
+    }
+
+    .shop-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .one-shop {
+        width: 90%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+    .box-info-shop{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .box-info-shop .title2 {
+        width:auto;
+        padding: 5px ;
+        text-align: center;
+    }
+
+    .box-info-shop .name {
+        text-align: center;
+    }
+
+    .box-info-shop .adress {
+        text-align: center;
+    }
+
+    .shop-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .one-shop {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .one-shop .title2 {
+        text-align: center;
+    }
+
+    .shop-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .box-info-shop {
+        justify-content: center;
+        align-items: center;
+    }
+}
+

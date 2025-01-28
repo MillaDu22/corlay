@@ -1,0 +1,111 @@
+.asso-card {
+    min-width: 320px;
+    width:45%;
+    padding-top:30px;
+    padding-bottom: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#1e5a6e;
+    margin: 16px 0 0 0;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    overflow: hidden;
+    position: relative;
+}
+
+.asso-card .fas {
+    margin-top: 10px;
+    width:40px;
+    height:40px;
+    display:flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border:3px solid white;
+    border-radius: 50%;
+    font-size:30px;
+    color:black;
+}
+
+.asso-card .asso-title {
+    font-family:"Josefin", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.asso-card .asso-address i, .asso-card .asso-phone i  {
+    margin-right: 8px;
+    color: black;
+}
+
+.asso-siren,
+.asso-activity,
+.asso-address,
+.asso-phone {
+    margin: 4px 0;
+    font-family: "Futura LT", sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Style par défaut (invisible et en attente d'animation) */
+.asso-card {
+    opacity: 0;
+    transform: scale(0.1) rotate(-20deg);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Style lorsque la carte devient visible */
+.asso-card.visible {
+    animation: zoomRotateIn 0.6s ease both;
+}
+
+/* Animation */
+@keyframes zoomRotateIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-20deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .asso-card {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding: 30px 5% 30px 5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .asso-card {
+        width:90%;
+        padding-left:5%;
+        padding-right: 5%;
+        min-width: 100px;
+        align-items: center;
+    }
+}
+
+

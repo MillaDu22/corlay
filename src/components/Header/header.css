@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;600&display=swap');
+
+.container-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 170px auto 0;
+    width: 100%;
+    min-width: 320px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.box-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Effet fondu progressif */
+    z-index: 0; /* Empêche de superposer les images activées */
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1; /* L'image active passe devant */
+}
+
+/* Chevron styles */
+.chevron {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.chevron:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.chevron-left {
+    left: 20px;
+}
+
+.chevron-right {
+    right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-hero {
+        height: 250px;
+    }
+
+    .chevron {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

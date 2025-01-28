@@ -1,0 +1,114 @@
+.loisir-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e5a6e;
+    color: white;
+    padding: 16px;
+    margin: 16px 0;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(0); 
+    position: relative;
+    width: 45%;
+}
+
+/* Card visible state */
+.loisir-card.visible {
+    opacity: 1;
+}
+
+/* Animation for cards coming from the left */
+.loisir-card.from-left {
+    transform: translateX(-100%); /* Initial position off-screen */
+}
+
+.loisir-card.from-left.visible {
+    transform: translateX(0); /* Move to final position */
+}
+
+/* Animation for cards coming from the right */
+.loisir-card.from-right {
+    transform: translateX(100%); /* Initial position off-screen */
+}
+
+.loisir-card.from-right.visible {
+    transform: translateX(0); /* Move to final position */
+}
+
+
+.loisir-card .fas {
+    width:40px;
+    height:40px;
+    display:flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border:3px solid white;
+    border-radius: 50%;
+    font-size:30px;
+    color:black;
+}
+
+.loisir-card .loisir-title {
+    font-family: "Josefin", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.loisir-card p {
+    font-family: "Futura LT", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.loisir-card .loisir-activity {
+    font-family: "Futura LT", sans-serif;
+    text-transform: uppercase;
+}
+
+.loisir-card .loisir-address i,
+.loisir-card .loisir-phone i,
+.loisir-card .website i {
+    margin-right: 8px;
+    color: black;
+}
+
+.a-loisir {
+    font-family: "Futura LT", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.a-loisir:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .loisir-card{
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}

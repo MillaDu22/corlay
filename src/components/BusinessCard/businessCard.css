@@ -1,0 +1,148 @@
+
+.one-business {
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    background: #1e5a6e;
+    transform: translateX(-100%);  /* Commence à l'extérieur de la fenêtre */
+    opacity: 0; /* Invisible au départ */
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out; /* Animation de translation */
+}
+
+/* Animation de la carte visible */
+.one-business.visible {
+    transform: translateX(0); /* Reviens à la position d'origine */
+    opacity: 1; /* Devient visible */
+}
+
+/* Titres */
+.one-business .title2 {
+    font-family: 'Josefin', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    display :block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.box-text-business {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display :block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Adresse */
+.business-section .one-business .box-text-business .address,
+.business-section .one-business .box-text-business .phone,
+.business-section .one-business .box-text-business .email,
+.business-section .one-business .box-text-business .website,
+.business-section .one-business .box-text-business .additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Futura LT', sans-serif;
+    font-size: 16px;
+    line-height:18px;
+    font-weight: 400;
+    color: white;
+    margin: 5px 0;
+    text-align: center;
+    display :block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.one-business .address i,
+.one-business .phone i,
+.one-business .email i,
+.one-business .website i {
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    margin-right:6px;
+}
+
+/* Liens */
+.a-business {
+    font-family: "Futura LT", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+    display :block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.a-business:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size: 30px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .business-section .one-business{
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding: 30px 5% 30px 5%;
+    }
+
+    /* Titres */
+    .business-section .one-business .title2 {
+        margin-top: 15px;
+        font-size: 15px;
+
+    }
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .business-section .one-business {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
