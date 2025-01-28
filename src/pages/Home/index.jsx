@@ -9,7 +9,7 @@ import Tour from '../../assets/images/accueil/Tour-chateau.webp';
 import MaisonCheval from '../../assets/images/accueil/Maison-cheval.webp';
 import Talus4 from '../../assets/images/accueil/Talus4.webp';
 import Mairie from '../../assets/images/accueil/Place-mairie.webp';
-import Marché from '../../assets/images/accueil/Place-marché.webp';
+import Marché from '../../assets/images/accueil/Place-marche.webp';
 import Pontivy from '../../assets/images/accueil/Route-Pontivy.webp';
 import Facades from '../../assets/images/accueil/Facades-maisons.webp';
 import Meteo from '../../components/Meteo/index.jsx';
