@@ -2,7 +2,7 @@
 import React from "react";
 import "./municipalite.css";
 import Mairie from '../../assets/images/services/mairie.webp';
-import Olivier from "../../assets/images/municipalité/Olivier-Allain.webp"; 
+import Olivier from "../../assets/images/municipalite/Olivier-Allain.webp"; 
 
 const Municipalite = () => {
     const elus = [
