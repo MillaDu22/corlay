@@ -24,6 +24,7 @@ import Cover20 from '../../assets/images/services/airbnb.webp';
 import Cover21 from '../../assets/images/services/airbnb.webp';
 import Cover22 from '../../assets/images/services/pompes-funebres.webp';
 import Cover23 from '../../assets/images/services/pompes-funebres.webp';
+import Cover24 from '../../assets/images/services/Notaires.webp';
 import { Helmet } from 'react-helmet-async';
 import './services.css';
 
@@ -197,7 +198,14 @@ const services = [
         address: "Rue du parc Corel, 22320 Corlay",
         phone: "02 96 24 90 94",
         cover: Cover23,
-    }
+    },
+    {
+        title: "Notaires Mes CORTYL, JAGLIN, FALGEUL, RAOULT",
+        address: " Grande Rue, 22320 Corlay",
+        phone: "02 52 88 14 90",
+        website: "https://notarmor-quintin.notaires.fr/",
+        cover: Cover24,
+    },
 ];
 
 const sortedServices = [...services].sort((a, b) => 

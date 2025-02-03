@@ -214,15 +214,15 @@
         margin-left: 20px;
         background: none;
         border: none;
-        color: white;
+        color: black;
         cursor: pointer;
     }
 
     .menu-toggle:hover {
-        color: white;
+        color:#1e5a6e;
         transform: translateY(-2px);
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -240,15 +240,15 @@
         font-size: 18px;
         background: none;
         border: none;
-        color: black;
+        color: white;
         cursor: pointer;
         z-index: 1001; /* Assurez-vous qu'il est au-dessus du menu */
     }
 
     .menu-close:hover{
-        color: white;
+        color: #1e5a6e;
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -394,10 +394,10 @@
     }
 
     .menu-toggle:hover {
-        color: white;
+        color: #1e5a6e;
         transform: translateY(-2px);
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -421,9 +421,9 @@
     }
 
     .menu-close:hover{
-        color: white;
+        color:#1e5a6e;
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -567,10 +567,10 @@
     }
 
     .menu-toggle:hover {
-        color: white;
+        color: #1e5a6e;
         transform: translateY(-2px);
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -594,9 +594,9 @@
     }
 
     .menu-close:hover{
-        color: white;
+        color: #1e5a6e;
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -737,10 +737,10 @@
     }
 
     .menu-toggle:hover {
-        color: white;
+        color: #1e5a6e;
         transform: translateY(-2px);
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -764,9 +764,9 @@
     }
 
     .menu-close:hover{
-        color: white;
+        color: #1e5a6e;
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -905,10 +905,10 @@
     }
 
     .menu-toggle:hover {
-        color: white;
+        color: #1e5a6e;
         transform: translateY(-2px);
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -931,19 +931,19 @@
     }
 
     .menu-close:hover {
-        color: white;
+        color: #1e5a6e;
         transform: translateY(-2px);
         color: transparent; 
-        background: white;
+        background: #1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
     }
 
     .menu-close:hover{
-        color: white;
+        color: #1e5a6e;
         color: transparent; 
-        background:white;
+        background:#1e5a6e;
         -webkit-background-clip: text; 
         background-clip: text;
         -webkit-text-fill-color: transparent; 
