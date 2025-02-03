@@ -1,7 +1,7 @@
 {
   "name": "corlay",
   "private": true,
-  "homepage":"https://milladu22.github.io/corlay/",
+  "homepage":"https://corlay.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
