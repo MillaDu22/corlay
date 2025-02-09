@@ -22,6 +22,7 @@ import Cr110 from '../../assets/images/bulletins/bulletin-onze.webp';
 import Cr111 from '../../assets/images/bulletins/bulletin-douze.webp';
 import Cr112 from '../../assets/images/bulletins/bulletin-treize.webp';
 import Cr113 from '../../assets/images/bulletins/bulletin-quatorze.webp';
+import Cr114 from '../../assets/images/bulletins/bulletin-quinze.webp';
 
 const BulletinsSlider = () => {
 
@@ -34,6 +35,7 @@ const BulletinsSlider = () => {
     }, []);
 
     const bulletins = [
+        { number: "114", date: "Janvier 2025", image: Cr114, link: "https://www.calameo.com/read/0058652783204e1676995", alt:"bulletin 114 de Janvier 2025" },
         { number: "113", date: "Août 2024", image: Cr113, link: "https://www.calameo.com/read/0058652781b249e03e50d", alt:"bulletin 113 de Août 2024" },
         { number: "112", date: "Janvier 2024", image: Cr112, link: "https://www.calameo.com/read/005865278f526f99d401a", alt:"bulletin 112 de Janvier 2024" },
         { number: "111", date: "Août 2023", image: Cr111, link: "https://www.calameo.com/read/0058652789eeef2d90017", alt:"bulletin 111 de Août 2023" },
